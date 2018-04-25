@@ -1,3 +1,4 @@
+// This landscape is a turtle in the water with a sunset and red sky
 float y;
 float ySpeed;
 float xTurtle;
