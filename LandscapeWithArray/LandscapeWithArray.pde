@@ -1,6 +1,6 @@
 // This landscape is a turtle in the water with a sunset and red sky
-float ySun;
-float ysunSpeed;
+int ySun;
+int ysunSpeed;
 float xTurtle;
 float xturtleSpeed;
 PVector[] fish;
@@ -28,9 +28,11 @@ void draw() {
      ysunSpeed = -ysunSpeed;
   } else if (ySun >= 230) {
      ysunSpeed = -ysunSpeed;
+     fill(#F7FF00);
+     ellipse(280, ySun, 90, 90);
   }
   if (xTurtle > 750) {
-    xTurtle = -50;
+     xTurtle = -50;
   }
   noStroke();
   // sky
@@ -67,4 +69,26 @@ void draw() {
   fill(0);
   ellipse(xTurtle + 75, 287, 5, 5);
   ellipse(xTurtle + 75, 273, 5, 5);
+  //stick
+  stroke(#BA4A00);
+  strokeWeight(12);
+  line(700, 110, 500, 110);
+  line(530, 110, 500, 80);
+  //owl
+  stroke(0);
+  strokeWeight(2);
+  fill(0);
+  line(570, 104.5, 570, 86);
+  line(581, 104.5, 581, 86);
+  noStroke();
+  ellipse(575.5, 54, 60, 80); 
+  fill(#FDFEFE);
+  ellipse(575.5, 35, 40, 30);
+  ellipse(575.5, 68, 45, 45);
+  fill(0);
+  ellipse(566, 36, 8, 8);
+  ellipse(582, 36, 8, 8);
+  fill(#F7DC6F);
+  ellipse(566, 37, 6.5, 6.5);
+  ellipse(582, 37, 6.5, 6.5);
   }
